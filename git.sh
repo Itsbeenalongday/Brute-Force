@@ -1,0 +1,27 @@
+echo "############################################"
+echo "#                                          #"
+echo "#                                          #"
+echo "#                                          #"
+echo "#                                          #"
+echo "#    git pull push auto script ver 1.0     #"
+echo "#                                          #"
+echo "#         written by sungminyou            #"
+echo "#                                          #"
+echo "#                                          #"
+echo "#                                          #"
+echo "############################################"
+echo "\n"
+echo "*** start pull ***"
+echo "\n"
+git pull origin master
+echo "\n"
+echo "please enter a commit message >> "
+read line
+echo "\n"
+git add .
+echo "\n"
+git commit -m "$line"
+echo "\n"
+git push origin master
+echo "\n"
+echo "*** Pushing ended successfully ***"
